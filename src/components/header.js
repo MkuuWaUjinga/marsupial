@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import kangaroo from './../kangaroo.svg';
+import kangaroo from './../resources/kangaroo.svg';
 import "typeface-bungee-inline";
 import Typography from 'material-ui/Typography';
 
