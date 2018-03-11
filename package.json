@@ -8,8 +8,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
+    "react-slick": "^0.20.0",
     "typeface-bungee-inline": "0.0.54",
-    "typeface-roboto": "0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",

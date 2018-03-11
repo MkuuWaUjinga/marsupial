@@ -6,28 +6,14 @@ import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 import Table, { TableBody, TableCell, TableRow } from 'material-ui/Table';
 import Paper from 'material-ui/Paper';
-import opened from './../resources/3.jpg';
-import closed from './../resources/1.jpg';
-import GridList, { GridListTile,} from 'material-ui/GridList';
 
-const styles = theme => ({
+const styles = {
     card: {
         minWidth: 345,
-        width: '100%', margin:'auto'
-    },
-    title: {
-        marginBottom: 16,
-        fontSize: 40,
-    },
-    media: {
-        minHeight: 500,
-    },
-    table: {
-        textAlign: 'center',
-        maxWidth: 400,
-    },
-
-});
+        width: '100%',
+        margin:'auto'
+    }
+};
 
 let id = 0;
 function createData(key, value) {
@@ -40,18 +26,6 @@ const data = [
     createData('Fitting', 'iPhone 8 plus'),
 ];
 
-const tileData = [
-    {
-        img: opened,
-        title: 'opened marsupial',
-        author: 'Ad'
-    },
-    {
-        img: closed,
-        title: 'closed marsupial',
-        author: 'Ad'
-    }
-];
 
 function SimpleMediaCard(props) {
     const { classes } = props;
@@ -69,7 +43,7 @@ function SimpleMediaCard(props) {
                     </Typography>
                     <br/>
                     <Paper style={{width: '25%', margin:'auto'}}>
-                        <Table style={{ width: 400, margin: 'auto' }}>
+                        <Table>
                             <TableBody style={{ width: '25%' }}>
                                 {data.map(n => {
                                     return (

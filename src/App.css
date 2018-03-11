@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+.slick-slide.slick-center img { margin-left: auto; margin-right: auto; }
+
 .App-logo {
   height: 120px;
 }
