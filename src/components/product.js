@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import Card, { CardActions, CardContent } from 'material-ui/Card';
+import Card, { CardActions, CardContent, CardMedia} from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 import Table, { TableBody, TableCell, TableRow } from 'material-ui/Table';
@@ -26,6 +26,7 @@ const styles = theme => ({
         textAlign: 'center',
         maxWidth: 400,
     },
+
 });
 
 let id = 0;
@@ -58,25 +59,10 @@ function SimpleMediaCard(props) {
         <div>
             <Card className={classes.card}>
                 <CardContent>
-                    <Typography className={classes.title} variant="headline"> The Product
-                    </Typography>
-                </CardContent>
-                <CardContent>
-                    <Paper  style={{width: '100%', margin:'auto'}}>
-                        <GridList cellHeight={800}  cols={2}>
-                            {tileData.map(tile => (
-                                <GridListTile key={tile.img} cols={1}>
-                                    <img src={tile.img} alt={tile.title} />
-                                </GridListTile>
-                            ))}
-                        </GridList>
-                    </Paper>
-                </CardContent>
-                <CardContent>
-                    <Typography variant="headline" component="h1">
+                    <Typography variant="display1">
                         The Marsupial Case Vol.I
                     </Typography>
-                    <Typography component="p">
+                    <Typography variant="subheading">
                         We want you to go out with just one item in your pocket. No keys, no wallet bothering you.
                         Just you, your iPhone and the Kangaroo case. <br/> Store up to 3 credit cards and 3 keys in a new
                         vision of a phone case.

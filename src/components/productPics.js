@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
 import opened from './../resources/3.jpg'
+import { green400, green600, blue400, blue600, red400, red600 } from 'material-ui/styles/colors'
 import closed from './../resources/1.jpg'
 
 const styles = theme => ({
